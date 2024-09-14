@@ -49,6 +49,16 @@ public class Program
         {
             Console.WriteLine($"La venta que recibió mayor comisión es la tercera con un  monto: ${venta3}");
         }
+
+        // el promedio de las comisiones  que recibio por cada venta
+        double porcentajeComision1 = (comision1 / venta1) * 100;
+        double porcentajeComision2 = (comision2 / venta2) * 100;
+        double porcentajeComision3 = (comision3 / venta3) * 100;
+        double total_de_comision = (porcentajeComision1 + porcentajeComision2 + porcentajeComision3) / 3;
+        Console.WriteLine("Promedio del porcentaje de comisiones de  las ventas es: " + total_de_comision + "%");
+        
+
+
     }
 }
   
